@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClickerGameEngine"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Clicker Game" Height="550" Width="900">
     <Grid>
-        
+        <Image x:Name="image" HorizontalAlignment="Left" Height="100" Margin="10,409,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="100" Margin="120,409,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy" HorizontalAlignment="Left" Height="100" Margin="230,409,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image1_Copy" HorizontalAlignment="Left" Height="100" Margin="340,409,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy1" HorizontalAlignment="Left" Height="100" Margin="450,409,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image1_Copy1" HorizontalAlignment="Left" Height="100" Margin="560,409,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy2" HorizontalAlignment="Left" Height="100" Margin="670,409,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image1_Copy2" HorizontalAlignment="Left" Height="100" Margin="780,409,0,0" VerticalAlignment="Top" Width="100"/>
+
     </Grid>
 </Window>
