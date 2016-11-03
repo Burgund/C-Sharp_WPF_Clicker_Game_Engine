@@ -13,27 +13,51 @@ namespace ClickerGameEngine
     class GameObject
     {
         //Name of game object, f.e.: "house" if you want city-clicker or "new vlog" if you want youtuber-clicker etc.
-        public string Name { get; set; }
+        private string _name;
 
         //Level of game object (you can also understood it as amount of this kind game objects)
-        public int Level { get; set; }
+        private int _level;
         //Production earnings, f.e. in city-clicker "Office Tower" should be more profitable than "Kiosk"
-        public int Production { get;  set; }
+        private int _production;
         //increasing number/level of each game object should require an investment from player
-        public int Price { get; set; }
+        private int _price;
 
         //100x100 pixels bitmap of this game object
-        public Bitmap ObjectBitmap { get; set; }
-
-
+        private Bitmap _bitmap;
 
         public GameObject(string name, int level, int production, int price, Bitmap bitmap)
         {
-            Name = name;
-            Level = level;
-            Production = production;
-            Price = price;
-            ObjectBitmap = bitmap;
+            _name = name;
+            _level = level;
+            _production = production;
+            _price = price;
+            _bitmap = bitmap;
+        }
+
+        //This get methods allow us to get info about this Game Object to build User Interface
+        public string GetName()
+        {
+            return _name;
+        }
+
+        public int GetLevel()
+        {
+            return _level;
+        }
+
+        public int GetProduction()
+        {
+            return _production;
+        }
+
+        public int GetPrice()
+        {
+            return _price;
+        }
+
+        public Bitmap GetBitmap()
+        {
+            return _bitmap;
         }
     }
 }
