@@ -23,6 +23,17 @@ namespace ClickerGameEngine
         public int Price { get; set; }
 
         //100x100 pixels bitmap of this game object
-        public Bitmap Bitmap { get; set; }
+        public Bitmap ObjectBitmap { get; set; }
+
+
+
+        public GameObject (string name, int level, int production, int price, Bitmap bitmap)
+        {
+            Name = name;
+            Level = level;
+            Production = production;
+            Price = price;
+            ObjectBitmap = bitmap;
+        }
     }
 }
