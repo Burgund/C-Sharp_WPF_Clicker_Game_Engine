@@ -6,16 +6,48 @@
         xmlns:local="clr-namespace:ClickerGameEngine"
         mc:Ignorable="d"
         Title="Clicker Game" Height="550" Width="900">
-    <Grid>
-        <Image x:Name="GameObjectImage1" HorizontalAlignment="Left" Height="100" Margin="10,409,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="GameObjectImage2" HorizontalAlignment="Left" Height="100" Margin="120,409,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="GameObjectImage3" HorizontalAlignment="Left" Height="100" Margin="230,409,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="GameObjectImage4" HorizontalAlignment="Left" Height="100" Margin="340,409,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="GameObjectImage5" HorizontalAlignment="Left" Height="100" Margin="450,409,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="GameObjectImage6" HorizontalAlignment="Left" Height="100" Margin="560,409,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="GameObjectImage7" HorizontalAlignment="Left" Height="100" Margin="670,409,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="GameObjectImage8" HorizontalAlignment="Left" Height="100" Margin="780,409,0,0" VerticalAlignment="Top" Width="100"/>
-        <TextBox x:Name="moneyTextBox" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+    <Grid Background="#FF232323">
+        <Image x:Name="GameObjectImage1" HorizontalAlignment="Left" Height="100" Margin="10,409,0,0" VerticalAlignment="Top" Width="100">
+            <Image.OpacityMask>
+                <ImageBrush/>
+            </Image.OpacityMask>
+        </Image>
+        <Image x:Name="GameObjectImage2" HorizontalAlignment="Left" Height="100" Margin="120,409,0,0" VerticalAlignment="Top" Width="100">
+            <Image.OpacityMask>
+                <ImageBrush/>
+            </Image.OpacityMask>
+        </Image>
+        <Image x:Name="GameObjectImage3" HorizontalAlignment="Left" Height="100" Margin="230,409,0,0" VerticalAlignment="Top" Width="100">
+            <Image.OpacityMask>
+                <ImageBrush/>
+            </Image.OpacityMask>
+        </Image>
+        <Image x:Name="GameObjectImage4" HorizontalAlignment="Left" Height="100" Margin="340,409,0,0" VerticalAlignment="Top" Width="100">
+            <Image.OpacityMask>
+                <ImageBrush/>
+            </Image.OpacityMask>
+        </Image>
+        <Image x:Name="GameObjectImage5" HorizontalAlignment="Left" Height="100" Margin="450,409,0,0" VerticalAlignment="Top" Width="100">
+            <Image.OpacityMask>
+                <ImageBrush/>
+            </Image.OpacityMask>
+        </Image>
+        <Image x:Name="GameObjectImage6" HorizontalAlignment="Left" Height="100" Margin="560,409,0,0" VerticalAlignment="Top" Width="100">
+            <Image.OpacityMask>
+                <ImageBrush/>
+            </Image.OpacityMask>
+        </Image>
+        <Image x:Name="GameObjectImage7" HorizontalAlignment="Left" Height="100" Margin="670,409,0,0" VerticalAlignment="Top" Width="100">
+            <Image.OpacityMask>
+                <ImageBrush/>
+            </Image.OpacityMask>
+        </Image>
+        <Image x:Name="GameObjectImage8" HorizontalAlignment="Left" Height="100" Margin="780,409,0,0" VerticalAlignment="Top" Width="100">
+            <Image.OpacityMask>
+                <ImageBrush/>
+            </Image.OpacityMask>
+        </Image>
+        <TextBox x:Name="moneyTextBox" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FF2D2D2D"/>
 
     </Grid>
 </Window>
