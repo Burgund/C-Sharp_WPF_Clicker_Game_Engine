@@ -27,7 +27,7 @@ namespace ClickerGameEngine
 
 
 
-        public GameObject (string name, int level, int production, int price, Bitmap bitmap)
+        public GameObject(string name, int level, int production, int price, Bitmap bitmap)
         {
             Name = name;
             Level = level;
