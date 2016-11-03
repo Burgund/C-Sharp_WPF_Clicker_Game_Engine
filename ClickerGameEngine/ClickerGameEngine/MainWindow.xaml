@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClickerGameEngine"
         mc:Ignorable="d"
-        Title="Clicker Game" Height="550" Width="900">
+        Title="Clicker Game" Height="560" Width="900">
     <Grid Background="#FF232323">
-        <Image x:Name="GameObjectImage1" Source="Resources/NewPhoto.bmp" HorizontalAlignment="Left" Height="100" Margin="10,409,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="GameObjectImage2" Source="Resources/NewPhoto.bmp" HorizontalAlignment="Left" Height="100" Margin="120,409,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="GameObjectImage3" Source="Resources/NewPhoto.bmp" HorizontalAlignment="Left" Height="100" Margin="230,409,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="GameObjectImage4" Source="Resources/NewPhoto.bmp" HorizontalAlignment="Left" Height="100" Margin="340,409,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="GameObjectImage5" Source="Resources/NewPhoto.bmp" HorizontalAlignment="Left" Height="100" Margin="450,409,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="GameObjectImage6" Source="Resources/NewPhoto.bmp" HorizontalAlignment="Left" Height="100" Margin="560,409,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="GameObjectImage7" Source="Resources/NewPhoto.bmp" HorizontalAlignment="Left" Height="100" Margin="670,409,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="GameObjectImage8" Source="Resources/NewPhoto.bmp" HorizontalAlignment="Left" Height="100" Margin="780,409,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="GameObjectImage1" Source="Resources/NewPhoto.bmp" HorizontalAlignment="Left" Height="100" Margin="10,410,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="GameObjectImage2" Source="Resources/NewPhoto.bmp" HorizontalAlignment="Left" Height="100" Margin="120,410,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="GameObjectImage3" Source="Resources/NewPhoto.bmp" HorizontalAlignment="Left" Height="100" Margin="230,410,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="GameObjectImage4" Source="Resources/NewPhoto.bmp" HorizontalAlignment="Left" Height="100" Margin="340,410,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="GameObjectImage5" Source="Resources/NewPhoto.bmp" HorizontalAlignment="Left" Height="100" Margin="450,410,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="GameObjectImage6" Source="Resources/NewPhoto.bmp" HorizontalAlignment="Left" Height="100" Margin="560,410,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="GameObjectImage7" Source="Resources/NewPhoto.bmp" HorizontalAlignment="Left" Height="100" Margin="670,410,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="GameObjectImage8" Source="Resources/NewPhoto.bmp" HorizontalAlignment="Left" Height="100" Margin="780,410,0,0" VerticalAlignment="Top" Width="100"/>
         <TextBox x:Name="moneyTextBox" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FF2D2D2D"/>
 
     </Grid>
