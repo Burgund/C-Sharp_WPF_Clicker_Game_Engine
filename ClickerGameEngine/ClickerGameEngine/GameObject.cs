@@ -59,5 +59,20 @@ namespace ClickerGameEngine
         {
             return _bitmap;
         }
+
+        //Increasing level, price and production. Each next object should be more expensive and provide better production
+        public void IncreaseLevel()
+        {
+            _level++;
+            _price = _price + ((_price * _level) / 10);
+            if (_level < 5)
+            {
+                _production = _production + ((_production * _level) / 8);
+            }
+            else
+            {
+                _production = _production + ((_production * _level) / 12);
+            }
+        }
     }
 }
