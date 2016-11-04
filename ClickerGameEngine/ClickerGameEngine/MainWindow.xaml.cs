@@ -24,19 +24,20 @@ namespace ClickerGameEngine
         {
             InitializeComponent();
 
-            //Test
+            //We will need Builder to build our game objects
+            GameObjectBuilder gameObjectBuilder = new GameObjectBuilder();
 
-            GameObjectBuilder testBuilder = new GameObjectBuilder();
-            Uri uri1 = new Uri("pack://application:,,,/Resources/GameObjectOne.bmp");
-            BitmapImage bitmapObject1 = new BitmapImage(uri1);
-            GameObject testObject = testBuilder
-                .SetName("Office Tower")
+            //Game Object 1 --------------------------------------------------------------------------
+            Uri uriGameObject1 = new Uri("pack://application:,,,/Resources/GameObjectOne.bmp");
+            BitmapImage bitmapGameObject1 = new BitmapImage(uriGameObject1);
+            GameObject gameObject1 = gameObjectBuilder
+                .SetName("Game Object 1")
                 .SetLevel(1)
-                .SetPrice(10000)
-                .SetProduction(1000)
-                .SetBitmap(bitmapObject1)
+                .SetPrice(1)
+                .SetProduction(1)
+                .SetBitmap(bitmapGameObject1)
                 .Build();
-            ((MainWindow)System.Windows.Application.Current.MainWindow).GameObjectImage1.Source = testObject.GetBitmap();
+            ((MainWindow)Application.Current.MainWindow).GameObjectImage1.Source = gameObject1.GetBitmap();
         }
     }
 }
