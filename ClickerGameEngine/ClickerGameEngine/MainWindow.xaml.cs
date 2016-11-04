@@ -27,7 +27,7 @@ namespace ClickerGameEngine
             //Test
 
             GameObjectBuilder testBuilder = new GameObjectBuilder();
-            Uri uri1 = new Uri("pack://application:,,,/Resources/Office.bmp");
+            Uri uri1 = new Uri("pack://application:,,,/Resources/GameObjectOne.bmp");
             BitmapImage bitmapObject1 = new BitmapImage(uri1);
             GameObject testObject = testBuilder
                 .SetName("Office Tower")
@@ -36,6 +36,7 @@ namespace ClickerGameEngine
                 .SetProduction(1000)
                 .SetBitmap(bitmapObject1)
                 .Build();
+            ((MainWindow)System.Windows.Application.Current.MainWindow).GameObjectImage1.Source = testObject.GetBitmap();
         }
     }
 }

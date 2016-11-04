@@ -107,6 +107,16 @@
   <ItemGroup>
     <Resource Include="Resources\Office.bmp" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\GameObjectEight.bmp" />
+    <Resource Include="Resources\GameObjectFive.bmp" />
+    <Resource Include="Resources\GameObjectFour.bmp" />
+    <Resource Include="Resources\GameObjectOne.bmp" />
+    <Resource Include="Resources\GameObjectSeven.bmp" />
+    <Resource Include="Resources\GameObjectSix.bmp" />
+    <Resource Include="Resources\GameObjectThree.bmp" />
+    <Resource Include="Resources\GameObjectTwo.bmp" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -43,7 +43,6 @@ namespace ClickerGameEngine
 
         public GameObjectBuilder SetBitmap(BitmapImage bitmap)
         {
-            ((MainWindow)System.Windows.Application.Current.MainWindow).GameObjectImage1.Source = bitmap;
             this._bitmap = bitmap;
             return this;
         }
