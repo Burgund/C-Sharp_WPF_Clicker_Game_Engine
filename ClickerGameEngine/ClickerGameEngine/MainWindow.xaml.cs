@@ -24,7 +24,18 @@ namespace ClickerGameEngine
         {
             InitializeComponent();
 
+            //Test
 
+            GameObjectBuilder testBuilder = new GameObjectBuilder();
+            Uri uri1 = new Uri("pack://application:,,,/Resources/Office.bmp");
+            BitmapImage bitmapObject1 = new BitmapImage(uri1);
+            GameObject testObject = testBuilder
+                .SetName("Office Tower")
+                .SetLevel(1)
+                .SetPrice(10000)
+                .SetProduction(1000)
+                .SetBitmap(bitmapObject1)
+                .Build();
         }
     }
 }

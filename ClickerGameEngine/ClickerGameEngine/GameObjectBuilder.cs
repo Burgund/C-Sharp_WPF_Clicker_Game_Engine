@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
+using System.Windows.Media.Imaging;
 
 namespace ClickerGameEngine
 {
@@ -14,7 +15,7 @@ namespace ClickerGameEngine
         private int _level;
         private int _production;
         private int _price;
-        private Bitmap _bitmap;
+        private BitmapImage _bitmap;
 
         public GameObjectBuilder SetName(string name)
         {
@@ -40,8 +41,9 @@ namespace ClickerGameEngine
             return this;
         }
 
-        public GameObjectBuilder SetBitmap(Bitmap bitmap)
+        public GameObjectBuilder SetBitmap(BitmapImage bitmap)
         {
+            ((MainWindow)System.Windows.Application.Current.MainWindow).GameObjectImage1.Source = bitmap;
             this._bitmap = bitmap;
             return this;
         }
