@@ -33,11 +33,95 @@ namespace ClickerGameEngine
             GameObject gameObject1 = gameObjectBuilder
                 .SetName("Game Object 1")
                 .SetLevel(1)
-                .SetPrice(1)
+                .SetPrice(10)
                 .SetProduction(1)
                 .SetBitmap(bitmapGameObject1)
                 .Build();
             ((MainWindow)Application.Current.MainWindow).GameObjectImage1.Source = gameObject1.GetBitmap();
+
+            //Game Object 2 --------------------------------------------------------------------------
+            Uri uriGameObject2 = new Uri("pack://application:,,,/Resources/GameObjectTwo.bmp");
+            BitmapImage bitmapGameObject2 = new BitmapImage(uriGameObject2);
+            GameObject gameObject2 = gameObjectBuilder
+                .SetName("Game Object 2")
+                .SetLevel(1)
+                .SetPrice(20)
+                .SetProduction(4)
+                .SetBitmap(bitmapGameObject2)
+                .Build();
+            ((MainWindow)Application.Current.MainWindow).GameObjectImage2.Source = gameObject2.GetBitmap();
+
+            //Game Object 3 --------------------------------------------------------------------------
+            Uri uriGameObject3 = new Uri("pack://application:,,,/Resources/GameObjectThree.bmp");
+            BitmapImage bitmapGameObject3 = new BitmapImage(uriGameObject3);
+            GameObject gameObject3 = gameObjectBuilder
+                .SetName("Game Object 3")
+                .SetLevel(1)
+                .SetPrice(110)
+                .SetProduction(15)
+                .SetBitmap(bitmapGameObject3)
+                .Build();
+            ((MainWindow)Application.Current.MainWindow).GameObjectImage3.Source = gameObject3.GetBitmap();
+
+            //Game Object 4 --------------------------------------------------------------------------
+            Uri uriGameObject4 = new Uri("pack://application:,,,/Resources/GameObjectFour.bmp");
+            BitmapImage bitmapGameObject4 = new BitmapImage(uriGameObject4);
+            GameObject gameObject4 = gameObjectBuilder
+                .SetName("Game Object 4")
+                .SetLevel(1)
+                .SetPrice(800)
+                .SetProduction(80)
+                .SetBitmap(bitmapGameObject4)
+                .Build();
+            ((MainWindow)Application.Current.MainWindow).GameObjectImage4.Source = gameObject4.GetBitmap();
+
+            //Game Object 5 --------------------------------------------------------------------------
+            Uri uriGameObject5 = new Uri("pack://application:,,,/Resources/GameObjectFive.bmp");
+            BitmapImage bitmapGameObject5 = new BitmapImage(uriGameObject5);
+            GameObject gameObject5 = gameObjectBuilder
+                .SetName("Game Object 5")
+                .SetLevel(1)
+                .SetPrice(2400)
+                .SetProduction(160)
+                .SetBitmap(bitmapGameObject5)
+                .Build();
+            ((MainWindow)Application.Current.MainWindow).GameObjectImage5.Source = gameObject5.GetBitmap();
+
+            //Game Object 6 --------------------------------------------------------------------------
+            Uri uriGameObject6 = new Uri("pack://application:,,,/Resources/GameObjectSix.bmp");
+            BitmapImage bitmapGameObject6 = new BitmapImage(uriGameObject6);
+            GameObject gameObject6 = gameObjectBuilder
+                .SetName("Game Object 6")
+                .SetLevel(1)
+                .SetPrice(10000)
+                .SetProduction(350)
+                .SetBitmap(bitmapGameObject6)
+                .Build();
+            ((MainWindow)Application.Current.MainWindow).GameObjectImage6.Source = gameObject6.GetBitmap();
+
+            //Game Object 7 --------------------------------------------------------------------------
+            Uri uriGameObject7 = new Uri("pack://application:,,,/Resources/GameObjectSeven.bmp");
+            BitmapImage bitmapGameObject7 = new BitmapImage(uriGameObject7);
+            GameObject gameObject7 = gameObjectBuilder
+                .SetName("Game Object 7")
+                .SetLevel(1)
+                .SetPrice(200000)
+                .SetProduction(1500)
+                .SetBitmap(bitmapGameObject7)
+                .Build();
+            ((MainWindow)Application.Current.MainWindow).GameObjectImage7.Source = gameObject7.GetBitmap();
+
+            //Game Object 8 --------------------------------------------------------------------------
+            Uri uriGameObject8 = new Uri("pack://application:,,,/Resources/GameObjectEight.bmp");
+            BitmapImage bitmapGameObject8 = new BitmapImage(uriGameObject8);
+            GameObject gameObject8 = gameObjectBuilder
+                .SetName("Game Object 8")
+                .SetLevel(1)
+                .SetPrice(3000000)
+                .SetProduction(12000)
+                .SetBitmap(bitmapGameObject8)
+                .Build();
+            ((MainWindow)Application.Current.MainWindow).GameObjectImage8.Source = gameObject8.GetBitmap();
         }
     }
 }
