@@ -14,8 +14,16 @@
         <Image x:Name="GameObjectImage5" Source="Resources/NewPhoto.bmp" HorizontalAlignment="Left" Height="100" Margin="450,410,0,0" VerticalAlignment="Top" Width="100"/>
         <Image x:Name="GameObjectImage6" Source="Resources/NewPhoto.bmp" HorizontalAlignment="Left" Height="100" Margin="560,410,0,0" VerticalAlignment="Top" Width="100"/>
         <Image x:Name="GameObjectImage7" Source="Resources/NewPhoto.bmp" HorizontalAlignment="Left" Height="100" Margin="670,410,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="GameObjectImage8" Source="Resources/NewPhoto.bmp" HorizontalAlignment="Left" Height="100" Margin="780,410,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="GameObjectImage8" Source="Resources/NewPhoto.bmp" HorizontalAlignment="Left" Height="100" Margin="780,411,0,0" VerticalAlignment="Top" Width="100"/>
         <TextBox x:Name="moneyTextBox" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FF2D2D2D"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,390,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="120,390,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="230,390,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100"/>
+        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="340,390,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100"/>
+        <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="450,390,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100"/>
+        <TextBlock x:Name="textBlock_Copy4" HorizontalAlignment="Left" Margin="560,390,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100"/>
+        <TextBlock x:Name="textBlock_Copy5" HorizontalAlignment="Left" Margin="670,390,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100"/>
+        <TextBlock x:Name="textBlock_Copy6" HorizontalAlignment="Left" Margin="780,390,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>
