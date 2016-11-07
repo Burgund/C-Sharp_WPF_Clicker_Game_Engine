@@ -40,6 +40,14 @@
         <TextBlock x:Name="LevelGameObject6" HorizontalAlignment="Left" Margin="560,360,0,0" TextWrapping="Wrap" Text="Level" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
         <TextBlock x:Name="LevelGameObject7" HorizontalAlignment="Left" Margin="670,360,0,0" TextWrapping="Wrap" Text="Level" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
         <TextBlock x:Name="LevelGameObject8" HorizontalAlignment="Left" Margin="780,360,0,0" TextWrapping="Wrap" Text="Level" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="NameGameObject1" HorizontalAlignment="Left" Margin="10,345,0,0" TextWrapping="Wrap" Text="GameObject1" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="NameGameObject2" HorizontalAlignment="Left" Margin="120,345,0,0" TextWrapping="Wrap" Text="GameObject2" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="NameGameObject3" HorizontalAlignment="Left" Margin="230,345,0,0" TextWrapping="Wrap" Text="GameObject3" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="NameGameObject4" HorizontalAlignment="Left" Margin="340,345,0,0" TextWrapping="Wrap" Text="GameObject4" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="NameGameObject5" HorizontalAlignment="Left" Margin="450,345,0,0" TextWrapping="Wrap" Text="GameObject5" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="NameGameObject6" HorizontalAlignment="Left" Margin="560,345,0,0" TextWrapping="Wrap" Text="GameObject6" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="NameGameObject7" HorizontalAlignment="Left" Margin="670,345,0,0" TextWrapping="Wrap" Text="GameObject7" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="NameGameObject8" HorizontalAlignment="Left" Margin="780,345,0,0" TextWrapping="Wrap" Text="GameObject8" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
 
     </Grid>
 </Window>
