@@ -16,14 +16,22 @@
         <Image x:Name="GameObjectImage7" Source="Resources/NewPhoto.bmp" HorizontalAlignment="Left" Height="100" Margin="670,410,0,0" VerticalAlignment="Top" Width="100"/>
         <Image x:Name="GameObjectImage8" Source="Resources/NewPhoto.bmp" HorizontalAlignment="Left" Height="100" Margin="780,411,0,0" VerticalAlignment="Top" Width="100"/>
         <TextBox x:Name="moneyTextBox" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FF2D2D2D"/>
-        <TextBlock x:Name="ProductionGameObject1" HorizontalAlignment="Left" Margin="10,390,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
-        <TextBlock x:Name="ProductionGameObject2" HorizontalAlignment="Left" Margin="120,390,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
-        <TextBlock x:Name="ProductionGameObject3" HorizontalAlignment="Left" Margin="230,390,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
-        <TextBlock x:Name="ProductionGameObject4" HorizontalAlignment="Left" Margin="340,390,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
-        <TextBlock x:Name="ProductionGameObject5" HorizontalAlignment="Left" Margin="450,390,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
-        <TextBlock x:Name="ProductionGameObject6" HorizontalAlignment="Left" Margin="560,390,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
-        <TextBlock x:Name="ProductionGameObject7" HorizontalAlignment="Left" Margin="670,390,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
-        <TextBlock x:Name="ProductionGameObject8" HorizontalAlignment="Left" Margin="780,390,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="ProductionGameObject1" HorizontalAlignment="Left" Margin="10,390,0,0" TextWrapping="Wrap" Text="Production" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="ProductionGameObject2" HorizontalAlignment="Left" Margin="120,390,0,0" TextWrapping="Wrap" Text="Production" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="ProductionGameObject3" HorizontalAlignment="Left" Margin="230,390,0,0" TextWrapping="Wrap" Text="Production" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="ProductionGameObject4" HorizontalAlignment="Left" Margin="340,390,0,0" TextWrapping="Wrap" Text="Production" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="ProductionGameObject5" HorizontalAlignment="Left" Margin="450,390,0,0" TextWrapping="Wrap" Text="Production" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="ProductionGameObject6" HorizontalAlignment="Left" Margin="560,390,0,0" TextWrapping="Wrap" Text="Production" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="ProductionGameObject7" HorizontalAlignment="Left" Margin="670,390,0,0" TextWrapping="Wrap" Text="Production" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="ProductionGameObject8" HorizontalAlignment="Left" Margin="780,390,0,0" TextWrapping="Wrap" Text="Production" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="PriceGameObject1" HorizontalAlignment="Left" Margin="10,375,0,0" TextWrapping="Wrap" Text="Price" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="PriceGameObject2" HorizontalAlignment="Left" Margin="120,375,0,0" TextWrapping="Wrap" Text="Price" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="PriceGameObject3" HorizontalAlignment="Left" Margin="230,375,0,0" TextWrapping="Wrap" Text="Price" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="PriceGameObject4" HorizontalAlignment="Left" Margin="340,375,0,0" TextWrapping="Wrap" Text="Price" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="PriceGameObject5" HorizontalAlignment="Left" Margin="450,375,0,0" TextWrapping="Wrap" Text="Price" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="PriceGameObject6" HorizontalAlignment="Left" Margin="560,375,0,0" TextWrapping="Wrap" Text="Price" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="PriceGameObject7" HorizontalAlignment="Left" Margin="670,375,0,0" TextWrapping="Wrap" Text="Price" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="PriceGameObject8" HorizontalAlignment="Left" Margin="780,375,0,0" TextWrapping="Wrap" Text="Price" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
 
     </Grid>
 </Window>
