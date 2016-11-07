@@ -32,6 +32,14 @@
         <TextBlock x:Name="PriceGameObject6" HorizontalAlignment="Left" Margin="560,375,0,0" TextWrapping="Wrap" Text="Price" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
         <TextBlock x:Name="PriceGameObject7" HorizontalAlignment="Left" Margin="670,375,0,0" TextWrapping="Wrap" Text="Price" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
         <TextBlock x:Name="PriceGameObject8" HorizontalAlignment="Left" Margin="780,375,0,0" TextWrapping="Wrap" Text="Price" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="LevelGameObject1" HorizontalAlignment="Left" Margin="10,360,0,0" TextWrapping="Wrap" Text="Level" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="LevelGameObject2" HorizontalAlignment="Left" Margin="120,360,0,0" TextWrapping="Wrap" Text="Level" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="LevelGameObject3" HorizontalAlignment="Left" Margin="230,360,0,0" TextWrapping="Wrap" Text="Level" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="LevelGameObject4" HorizontalAlignment="Left" Margin="340,360,0,0" TextWrapping="Wrap" Text="Level" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="LevelGameObject5" HorizontalAlignment="Left" Margin="450,360,0,0" TextWrapping="Wrap" Text="Level" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="LevelGameObject6" HorizontalAlignment="Left" Margin="560,360,0,0" TextWrapping="Wrap" Text="Level" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="LevelGameObject7" HorizontalAlignment="Left" Margin="670,360,0,0" TextWrapping="Wrap" Text="Level" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
+        <TextBlock x:Name="LevelGameObject8" HorizontalAlignment="Left" Margin="780,360,0,0" TextWrapping="Wrap" Text="Level" VerticalAlignment="Top" Width="100" Foreground="#FFA49F9F"/>
 
     </Grid>
 </Window>
