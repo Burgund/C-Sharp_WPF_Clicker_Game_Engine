@@ -66,7 +66,12 @@ namespace ClickerGameEngine
         {
             _level++;
             _price = _price + ((_price * _level) / 10);
-            if (_level < 5)
+
+            if (_level == 0)
+            {
+                _production = 0;
+            }
+            else if (_level < 5)
             {
                 _production = _production + ((_production * _level) / 8);
             }
