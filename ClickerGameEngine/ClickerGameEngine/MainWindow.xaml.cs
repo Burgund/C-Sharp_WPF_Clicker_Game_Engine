@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Timers;
 
 namespace ClickerGameEngine
 {
@@ -20,9 +21,19 @@ namespace ClickerGameEngine
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Timer _timer;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            //Timer object to handle each second auto-click. Game main-loop
+            //Set timer tact to 1sec
+            _timer = new Timer(1000);
+            //Timer start
+            _timer.Enabled = true;
+            //Add event method to our timer
+            _timer.Elapsed += OnTimedEvent;
 
             //We will need Builder to build our game objects
             GameObjectBuilder gameObjectBuilder = new GameObjectBuilder();
@@ -122,6 +133,12 @@ namespace ClickerGameEngine
                 .SetBitmap(bitmapGameObject8)
                 .Build();
             ((MainWindow)Application.Current.MainWindow).GameObjectImage8.Source = gameObject8.GetBitmap();
+        }
+
+        //Timer event method
+        private static void OnTimedEvent(Object source, ElapsedEventArgs e)
+        {
+            Console.WriteLine("The Elapsed event was raised at {0}", e.SignalTime);
         }
     }
 }
