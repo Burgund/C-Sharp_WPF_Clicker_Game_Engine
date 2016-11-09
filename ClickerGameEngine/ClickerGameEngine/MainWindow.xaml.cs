@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Timers;
+using System.Windows.Threading;
 
 namespace ClickerGameEngine
 {
@@ -21,19 +22,22 @@ namespace ClickerGameEngine
     /// </summary>
     public partial class MainWindow : Window
     {
-        private Timer _timer;
+        private DispatcherTimer _timer;
+        private long _money = 0;
+        private int _moneyPerSec = 0;
 
         public MainWindow()
         {
             InitializeComponent();
 
             //Timer object to handle each second auto-click. Game main-loop
-            //Set timer tact to 1sec
-            _timer = new Timer(1000);
-            //Timer start
-            _timer.Enabled = true;
+            _timer = new DispatcherTimer(DispatcherPriority.SystemIdle);
             //Add event method to our timer
-            _timer.Elapsed += OnTimedEvent;
+            _timer.Tick += new EventHandler(OnUpdateTimerTick);
+            //Set timer tact to 1sec
+            _timer.Interval = TimeSpan.FromMilliseconds(1000);
+            //Timer start
+            _timer.Start();
 
             //We will need Builder to build our game objects
             GameObjectBuilder gameObjectBuilder = new GameObjectBuilder();
@@ -136,9 +140,10 @@ namespace ClickerGameEngine
         }
 
         //Timer event method
-        private static void OnTimedEvent(Object source, ElapsedEventArgs e)
+        private void OnUpdateTimerTick(object sender, EventArgs e)
         {
-            Console.WriteLine("The Elapsed event was raised at {0}", e.SignalTime);
+            moneyTextBox.Text = _money.ToString();
+            moneyPerSecondTextBox.Text = _moneyPerSec.ToString();
         }
     }
 }
