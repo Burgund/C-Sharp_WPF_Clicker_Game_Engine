@@ -58,7 +58,7 @@ namespace ClickerGameEngine
                 .SetProduction(1)
                 .SetBitmap(bitmapGameObject1)
                 .Build();
-            ((MainWindow)Application.Current.MainWindow).GameObjectImage1.Source = gameObject1.GetBitmap();
+            GameObjectImage1.Source = gameObject1.GetBitmap();
 
             //Game Object 2 --------------------------------------------------------------------------
             Uri uriGameObject2 = new Uri("pack://application:,,,/Resources/GameObjectTwo.bmp");
@@ -70,7 +70,7 @@ namespace ClickerGameEngine
                 .SetProduction(4)
                 .SetBitmap(bitmapGameObject2)
                 .Build();
-            ((MainWindow)Application.Current.MainWindow).GameObjectImage2.Source = gameObject2.GetBitmap();
+            GameObjectImage2.Source = gameObject2.GetBitmap();
 
             //Game Object 3 --------------------------------------------------------------------------
             Uri uriGameObject3 = new Uri("pack://application:,,,/Resources/GameObjectThree.bmp");
@@ -82,7 +82,7 @@ namespace ClickerGameEngine
                 .SetProduction(15)
                 .SetBitmap(bitmapGameObject3)
                 .Build();
-            ((MainWindow)Application.Current.MainWindow).GameObjectImage3.Source = gameObject3.GetBitmap();
+            GameObjectImage3.Source = gameObject3.GetBitmap();
 
             //Game Object 4 --------------------------------------------------------------------------
             Uri uriGameObject4 = new Uri("pack://application:,,,/Resources/GameObjectFour.bmp");
@@ -94,7 +94,7 @@ namespace ClickerGameEngine
                 .SetProduction(80)
                 .SetBitmap(bitmapGameObject4)
                 .Build();
-            ((MainWindow)Application.Current.MainWindow).GameObjectImage4.Source = gameObject4.GetBitmap();
+            GameObjectImage4.Source = gameObject4.GetBitmap();
 
             //Game Object 5 --------------------------------------------------------------------------
             Uri uriGameObject5 = new Uri("pack://application:,,,/Resources/GameObjectFive.bmp");
@@ -106,7 +106,7 @@ namespace ClickerGameEngine
                 .SetProduction(160)
                 .SetBitmap(bitmapGameObject5)
                 .Build();
-            ((MainWindow)Application.Current.MainWindow).GameObjectImage5.Source = gameObject5.GetBitmap();
+            GameObjectImage5.Source = gameObject5.GetBitmap();
 
             //Game Object 6 --------------------------------------------------------------------------
             Uri uriGameObject6 = new Uri("pack://application:,,,/Resources/GameObjectSix.bmp");
@@ -118,7 +118,7 @@ namespace ClickerGameEngine
                 .SetProduction(350)
                 .SetBitmap(bitmapGameObject6)
                 .Build();
-            ((MainWindow)Application.Current.MainWindow).GameObjectImage6.Source = gameObject6.GetBitmap();
+            GameObjectImage6.Source = gameObject6.GetBitmap();
 
             //Game Object 7 --------------------------------------------------------------------------
             Uri uriGameObject7 = new Uri("pack://application:,,,/Resources/GameObjectSeven.bmp");
@@ -130,7 +130,7 @@ namespace ClickerGameEngine
                 .SetProduction(1500)
                 .SetBitmap(bitmapGameObject7)
                 .Build();
-            ((MainWindow)Application.Current.MainWindow).GameObjectImage7.Source = gameObject7.GetBitmap();
+            GameObjectImage7.Source = gameObject7.GetBitmap();
 
             //Game Object 8 --------------------------------------------------------------------------
             Uri uriGameObject8 = new Uri("pack://application:,,,/Resources/GameObjectEight.bmp");
@@ -142,7 +142,7 @@ namespace ClickerGameEngine
                 .SetProduction(12000)
                 .SetBitmap(bitmapGameObject8)
                 .Build();
-            ((MainWindow)Application.Current.MainWindow).GameObjectImage8.Source = gameObject8.GetBitmap();
+            GameObjectImage8.Source = gameObject8.GetBitmap();
         }
 
         //Timer event method
