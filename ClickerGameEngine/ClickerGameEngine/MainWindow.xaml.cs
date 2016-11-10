@@ -48,7 +48,7 @@ namespace ClickerGameEngine
             GameObject[] gameObjectArray = new GameObject[8];
             gameObjectArray = GameSetUp.BuildGameObjects();
 
-            //Set up game objects bitmaps to UI
+            //Set up game object bitmap to UI
             GameObjectImage1.Source = gameObjectArray[0].GetBitmap();
             GameObjectImage2.Source = gameObjectArray[1].GetBitmap();
             GameObjectImage3.Source = gameObjectArray[2].GetBitmap();
@@ -58,7 +58,7 @@ namespace ClickerGameEngine
             GameObjectImage7.Source = gameObjectArray[6].GetBitmap();
             GameObjectImage8.Source = gameObjectArray[7].GetBitmap();
 
-            //Set up game objects production to UI
+            //Set up game object production to UI
             ProductionGameObject1.Text = gameObjectArray[0].GetProduction().ToString();
             ProductionGameObject2.Text = gameObjectArray[1].GetProduction().ToString();
             ProductionGameObject3.Text = gameObjectArray[2].GetProduction().ToString();
@@ -68,7 +68,7 @@ namespace ClickerGameEngine
             ProductionGameObject7.Text = gameObjectArray[6].GetProduction().ToString();
             ProductionGameObject8.Text = gameObjectArray[7].GetProduction().ToString();
 
-            //Set up game objects price to UI
+            //Set up game object price to UI
             PriceGameObject1.Text = gameObjectArray[0].GetPrice().ToString();
             PriceGameObject2.Text = gameObjectArray[1].GetPrice().ToString();
             PriceGameObject3.Text = gameObjectArray[2].GetPrice().ToString();
@@ -77,6 +77,16 @@ namespace ClickerGameEngine
             PriceGameObject6.Text = gameObjectArray[5].GetPrice().ToString();
             PriceGameObject7.Text = gameObjectArray[6].GetPrice().ToString();
             PriceGameObject8.Text = gameObjectArray[7].GetPrice().ToString();
+
+            //Set up game object level
+            LevelGameObject1.Text = gameObjectArray[0].GetLevel().ToString();
+            LevelGameObject2.Text = gameObjectArray[1].GetLevel().ToString();
+            LevelGameObject3.Text = gameObjectArray[2].GetLevel().ToString();
+            LevelGameObject4.Text = gameObjectArray[3].GetLevel().ToString();
+            LevelGameObject5.Text = gameObjectArray[4].GetLevel().ToString();
+            LevelGameObject6.Text = gameObjectArray[5].GetLevel().ToString();
+            LevelGameObject7.Text = gameObjectArray[6].GetLevel().ToString();
+            LevelGameObject8.Text = gameObjectArray[7].GetLevel().ToString();
         }
 
         //Timer event method
