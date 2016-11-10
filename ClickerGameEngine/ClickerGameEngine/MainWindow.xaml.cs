@@ -87,6 +87,16 @@ namespace ClickerGameEngine
             LevelGameObject6.Text = gameObjectArray[5].GetLevel().ToString();
             LevelGameObject7.Text = gameObjectArray[6].GetLevel().ToString();
             LevelGameObject8.Text = gameObjectArray[7].GetLevel().ToString();
+
+            //Set up game object name
+            NameGameObject1.Text = gameObjectArray[0].GetName().ToString();
+            NameGameObject2.Text = gameObjectArray[1].GetName().ToString();
+            NameGameObject3.Text = gameObjectArray[2].GetName().ToString();
+            NameGameObject4.Text = gameObjectArray[3].GetName().ToString();
+            NameGameObject5.Text = gameObjectArray[4].GetName().ToString();
+            NameGameObject6.Text = gameObjectArray[5].GetName().ToString();
+            NameGameObject7.Text = gameObjectArray[6].GetName().ToString();
+            NameGameObject8.Text = gameObjectArray[7].GetName().ToString();
         }
 
         //Timer event method
