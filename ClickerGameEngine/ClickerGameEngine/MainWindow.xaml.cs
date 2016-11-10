@@ -120,6 +120,7 @@ namespace ClickerGameEngine
             moneyTextBox.Text = _money.ToString();
         }
 
+        //Each time player will increase level of any object we will have to update MPS value
         private void MoneyPerSecondUpdate()
         {
             _moneyPerSec = 0;
