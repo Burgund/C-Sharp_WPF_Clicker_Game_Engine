@@ -22,9 +22,13 @@ namespace ClickerGameEngine
     /// </summary>
     public partial class MainWindow : Window
     {
+        //Timer variable to do events each 1 second
         private DispatcherTimer _timer;
+        //Player wallet
         private long _money = 0;
+        //Each secong earnings  
         private int _moneyPerSec = 0;
+        //Each click earnings
         private int _moneyPerClick = 1;
 
         public MainWindow()
@@ -40,6 +44,7 @@ namespace ClickerGameEngine
             //Timer start
             _timer.Start();
 
+            //Building game objects ->
             //We will need Builder to build our game objects
             GameObjectBuilder gameObjectBuilder = new GameObjectBuilder();
 
@@ -143,7 +148,10 @@ namespace ClickerGameEngine
         //Timer event method
         private void OnUpdateTimerTick(object sender, EventArgs e)
         {
+            //Player will earn each second
             _money += _moneyPerSec;
+
+            //Each second UI will be update 
             moneyTextBox.Text = _money.ToString();
             moneyPerSecondTextBox.Text = _moneyPerSec.ToString();
             moneyPerClickTextBlock.Text = _moneyPerClick.ToString();
