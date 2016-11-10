@@ -143,8 +143,10 @@ namespace ClickerGameEngine
         //Timer event method
         private void OnUpdateTimerTick(object sender, EventArgs e)
         {
+            _money += _moneyPerSec;
             moneyTextBox.Text = _money.ToString();
             moneyPerSecondTextBox.Text = _moneyPerSec.ToString();
+            moneyPerClickTextBlock.Text = _moneyPerClick.ToString();
         }
     }
 }
