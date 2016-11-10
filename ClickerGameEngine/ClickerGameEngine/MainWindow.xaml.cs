@@ -67,6 +67,16 @@ namespace ClickerGameEngine
             ProductionGameObject6.Text = gameObjectArray[5].GetProduction().ToString();
             ProductionGameObject7.Text = gameObjectArray[6].GetProduction().ToString();
             ProductionGameObject8.Text = gameObjectArray[7].GetProduction().ToString();
+
+            //Set up game objects price to UI
+            PriceGameObject1.Text = gameObjectArray[0].GetPrice().ToString();
+            PriceGameObject2.Text = gameObjectArray[1].GetPrice().ToString();
+            PriceGameObject3.Text = gameObjectArray[2].GetPrice().ToString();
+            PriceGameObject4.Text = gameObjectArray[3].GetPrice().ToString();
+            PriceGameObject5.Text = gameObjectArray[4].GetPrice().ToString();
+            PriceGameObject6.Text = gameObjectArray[5].GetPrice().ToString();
+            PriceGameObject7.Text = gameObjectArray[6].GetPrice().ToString();
+            PriceGameObject8.Text = gameObjectArray[7].GetPrice().ToString();
         }
 
         //Timer event method
