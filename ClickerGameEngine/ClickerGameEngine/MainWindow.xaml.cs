@@ -25,6 +25,7 @@ namespace ClickerGameEngine
         private DispatcherTimer _timer;
         private long _money = 0;
         private int _moneyPerSec = 0;
+        private int _moneyPerClick = 1;
 
         public MainWindow()
         {
