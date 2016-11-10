@@ -57,6 +57,16 @@ namespace ClickerGameEngine
             GameObjectImage6.Source = gameObjectArray[5].GetBitmap();
             GameObjectImage7.Source = gameObjectArray[6].GetBitmap();
             GameObjectImage8.Source = gameObjectArray[7].GetBitmap();
+
+            //Set up game objects production to UI
+            ProductionGameObject1.Text = gameObjectArray[0].GetProduction().ToString();
+            ProductionGameObject2.Text = gameObjectArray[1].GetProduction().ToString();
+            ProductionGameObject3.Text = gameObjectArray[2].GetProduction().ToString();
+            ProductionGameObject4.Text = gameObjectArray[3].GetProduction().ToString();
+            ProductionGameObject5.Text = gameObjectArray[4].GetProduction().ToString();
+            ProductionGameObject6.Text = gameObjectArray[5].GetProduction().ToString();
+            ProductionGameObject7.Text = gameObjectArray[6].GetProduction().ToString();
+            ProductionGameObject8.Text = gameObjectArray[7].GetProduction().ToString();
         }
 
         //Timer event method
