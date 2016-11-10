@@ -156,5 +156,14 @@ namespace ClickerGameEngine
             moneyPerSecondTextBox.Text = _moneyPerSec.ToString();
             moneyPerClickTextBlock.Text = _moneyPerClick.ToString();
         }
+
+        private void ClickAreaHandler (object sender, MouseEventArgs e)
+        {
+            //increase wallet
+            _money += _moneyPerClick;
+
+            //UI wallet update
+            moneyTextBox.Text = _money.ToString();
+        }
     }
 }
