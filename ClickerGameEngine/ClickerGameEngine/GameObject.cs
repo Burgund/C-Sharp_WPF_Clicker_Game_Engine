@@ -67,6 +67,7 @@ namespace ClickerGameEngine
             _level++;
             _price = _price + ((_price * _level) / 10);
 
+            //TODO move 'return 0 if _level == 0' to GetProduction() 
             if (_level == 0)
             {
                 _production = 0;
