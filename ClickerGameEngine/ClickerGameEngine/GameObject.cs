@@ -48,7 +48,10 @@ namespace ClickerGameEngine
 
         public int GetProduction()
         {
-            return _production;
+            if (_level == 0)
+                return 0;
+            else
+                return _production;
         }
 
         public int GetPrice()
@@ -65,20 +68,15 @@ namespace ClickerGameEngine
         public void IncreaseLevel()
         {
             _level++;
-            _price = _price + ((_price * _level) / 10);
+            _price += (_price * _level) / 10;
 
-            //TODO move 'return 0 if _level == 0' to GetProduction() 
-            if (_level == 0)
+            if (_level < 5)
             {
-                _production = 0;
-            }
-            else if (_level < 5)
-            {
-                _production = _production + ((_production * _level) / 8);
+                _production += (_production * _level) / 8;
             }
             else
             {
-                _production = _production + ((_production * _level) / 12);
+                _production += (_production * _level) / 12;
             }
         }
     }
