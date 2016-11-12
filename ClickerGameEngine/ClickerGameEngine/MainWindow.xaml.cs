@@ -31,7 +31,7 @@ namespace ClickerGameEngine
         //Each click earnings
         private int _moneyPerClick = 1;
         //Set up game objects 
-        private GameObject[] _gameObjectArray = new GameObject[8];
+        private GameObject[] _gameObjectArray = GameSetUp.BuildGameObjects();
 
         public MainWindow()
         {
@@ -46,9 +46,45 @@ namespace ClickerGameEngine
             //Timer start
             _timer.Start();
 
-            //Set up game objects  
-            _gameObjectArray = GameSetUp.BuildGameObjects();
+            //Set up the UI
+            SetUpUI();
+        }
 
+        //Timer event method
+        private void OnUpdateTimerTick(object sender, EventArgs e)
+        {
+            //Player will earn each second
+            _money += _moneyPerSec;
+
+            //Each second UI will be update 
+            moneyTextBox.Text = _money.ToString();
+            moneyPerClickTextBlock.Text = _moneyPerClick.ToString();
+        }
+
+        private void ClickAreaHandler(object sender, MouseEventArgs e)
+        {
+            //increase wallet
+            _money += _moneyPerClick;
+
+            //UI wallet update
+            moneyTextBox.Text = _money.ToString();
+        }
+
+        //Each time player will increase level of any object we will have to update MPS value
+        private void MoneyPerSecondUpdate()
+        {
+            _moneyPerSec = 0;
+
+            for(int i = 0; i < _gameObjectArray.Length; i++)
+            {
+                _moneyPerSec += _gameObjectArray[i].GetProduction();
+            }
+
+            moneyPerSecondTextBox.Text = _moneyPerSec.ToString();
+        }
+
+        private void SetUpUI()
+        {
             //Set up game object bitmap to UI
             GameObjectImage1.Source = _gameObjectArray[0].GetBitmap();
             GameObjectImage2.Source = _gameObjectArray[1].GetBitmap();
@@ -98,39 +134,6 @@ namespace ClickerGameEngine
             NameGameObject6.Text = _gameObjectArray[5].GetName().ToString();
             NameGameObject7.Text = _gameObjectArray[6].GetName().ToString();
             NameGameObject8.Text = _gameObjectArray[7].GetName().ToString();
-        }
-
-        //Timer event method
-        private void OnUpdateTimerTick(object sender, EventArgs e)
-        {
-            //Player will earn each second
-            _money += _moneyPerSec;
-
-            //Each second UI will be update 
-            moneyTextBox.Text = _money.ToString();
-            moneyPerClickTextBlock.Text = _moneyPerClick.ToString();
-        }
-
-        private void ClickAreaHandler(object sender, MouseEventArgs e)
-        {
-            //increase wallet
-            _money += _moneyPerClick;
-
-            //UI wallet update
-            moneyTextBox.Text = _money.ToString();
-        }
-
-        //Each time player will increase level of any object we will have to update MPS value
-        private void MoneyPerSecondUpdate()
-        {
-            _moneyPerSec = 0;
-
-            for(int i = 0; i < _gameObjectArray.Length; i++)
-            {
-                _moneyPerSec += _gameObjectArray[i].GetProduction();
-            }
-
-            moneyPerSecondTextBox.Text = _moneyPerSec.ToString();
         }
     }
 }
