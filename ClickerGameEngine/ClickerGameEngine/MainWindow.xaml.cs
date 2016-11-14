@@ -133,6 +133,7 @@ namespace ClickerGameEngine
             {
                 _money -= gameObject.GetPrice();
                 gameObject.IncreaseLevel();
+                MoneyPerSecondUpdate();
             }
             else
             {
