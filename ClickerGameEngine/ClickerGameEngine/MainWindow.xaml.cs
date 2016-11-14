@@ -61,15 +61,6 @@ namespace ClickerGameEngine
             moneyPerClickTextBlock.Text = _moneyPerClick.ToString();
         }
 
-        private void ClickAreaHandler(object sender, MouseEventArgs e)
-        {
-            //increase wallet
-            _money += _moneyPerClick;
-
-            //UI wallet update
-            moneyTextBox.Text = _money.ToString();
-        }
-
         //Each time player will increase level of any object we will have to update MPS value
         private void MoneyPerSecondUpdate()
         {
@@ -147,6 +138,55 @@ namespace ClickerGameEngine
             {
                 MessageBox.Show("You do not have enough money!");
             }
+        }
+
+        private void ImageOneClicked(object sender, MouseEventArgs e)
+        {
+            BuyNewObject(_gameObjectArray[0]);
+        }
+
+        private void ImageTwoClicked(object sender, MouseEventArgs e)
+        {
+            BuyNewObject(_gameObjectArray[1]);
+        }
+
+        private void ImageThreeClicked(object sender, MouseEventArgs e)
+        {
+            BuyNewObject(_gameObjectArray[2]);
+        }
+
+        private void ImageFourClicked(object sender, MouseEventArgs e)
+        {
+            BuyNewObject(_gameObjectArray[3]);
+        }
+
+        private void ImageFiveClicked(object sender, MouseEventArgs e)
+        {
+            BuyNewObject(_gameObjectArray[4]);
+        }
+
+        private void ImageSixClicked(object sender, MouseEventArgs e)
+        {
+            BuyNewObject(_gameObjectArray[5]);
+        }
+
+        private void ImageSevenClicked(object sender, MouseEventArgs e)
+        {
+            BuyNewObject(_gameObjectArray[6]);
+        }
+
+        private void ImageEightClicked(object sender, MouseEventArgs e)
+        {
+            BuyNewObject(_gameObjectArray[7]);
+        }
+
+        private void ClickAreaHandler(object sender, MouseEventArgs e)
+        {
+            //increase wallet
+            _money += _moneyPerClick;
+
+            //UI wallet update
+            moneyTextBox.Text = _money.ToString();
         }
     }
 }
