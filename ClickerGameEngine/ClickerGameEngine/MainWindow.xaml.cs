@@ -135,5 +135,18 @@ namespace ClickerGameEngine
             NameGameObject7.Text = _gameObjectArray[6].GetName().ToString();
             NameGameObject8.Text = _gameObjectArray[7].GetName().ToString();
         }
+
+        private void BuyNewObject(GameObject gameObject)
+        {
+            if(_money >= gameObject.GetPrice())
+            {
+                _money -= gameObject.GetPrice();
+                gameObject.IncreaseLevel();
+            }
+            else
+            {
+                MessageBox.Show("You do not have enough money!");
+            }
+        }
     }
 }
