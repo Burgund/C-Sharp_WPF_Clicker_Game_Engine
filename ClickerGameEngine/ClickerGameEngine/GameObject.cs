@@ -68,15 +68,15 @@ namespace ClickerGameEngine
         public void IncreaseLevel()
         {
             _level++;
-            _price += (_price * _level) / 10;
+            _price += _level * 2;
 
             if (_level < 5)
             {
-                _production += (_production * _level) / 8;
+                _production = _production * 2;
             }
             else
             {
-                _production += (_production * _level) / 12;
+                _production = (int)(_production + (_production * 0.1));
             }
         }
     }
