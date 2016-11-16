@@ -36,7 +36,7 @@ namespace ClickerGameEngine
             GameObject gameObject2 = gameObjectBuilder
                 .SetName("Game Object 2")
                 .SetLevel(0)
-                .SetPrice(20)
+                .SetPrice(40)
                 .SetProduction(4)
                 .SetBitmap(bitmapGameObject2)
                 .Build();
@@ -48,7 +48,7 @@ namespace ClickerGameEngine
             GameObject gameObject3 = gameObjectBuilder
                 .SetName("Game Object 3")
                 .SetLevel(0)
-                .SetPrice(110)
+                .SetPrice(200)
                 .SetProduction(15)
                 .SetBitmap(bitmapGameObject3)
                 .Build();
@@ -60,7 +60,7 @@ namespace ClickerGameEngine
             GameObject gameObject4 = gameObjectBuilder
                 .SetName("Game Object 4")
                 .SetLevel(0)
-                .SetPrice(800)
+                .SetPrice(1800)
                 .SetProduction(80)
                 .SetBitmap(bitmapGameObject4)
                 .Build();
@@ -72,7 +72,7 @@ namespace ClickerGameEngine
             GameObject gameObject5 = gameObjectBuilder
                 .SetName("Game Object 5")
                 .SetLevel(0)
-                .SetPrice(2400)
+                .SetPrice(10000)
                 .SetProduction(160)
                 .SetBitmap(bitmapGameObject5)
                 .Build();
@@ -84,7 +84,7 @@ namespace ClickerGameEngine
             GameObject gameObject6 = gameObjectBuilder
                 .SetName("Game Object 6")
                 .SetLevel(0)
-                .SetPrice(10000)
+                .SetPrice(100000)
                 .SetProduction(350)
                 .SetBitmap(bitmapGameObject6)
                 .Build();
@@ -96,7 +96,7 @@ namespace ClickerGameEngine
             GameObject gameObject7 = gameObjectBuilder
                 .SetName("Game Object 7")
                 .SetLevel(0)
-                .SetPrice(200000)
+                .SetPrice(2000000)
                 .SetProduction(1500)
                 .SetBitmap(bitmapGameObject7)
                 .Build();
@@ -108,7 +108,7 @@ namespace ClickerGameEngine
             GameObject gameObject8 = gameObjectBuilder
                 .SetName("Game Object 8")
                 .SetLevel(0)
-                .SetPrice(3000000)
+                .SetPrice(30000000)
                 .SetProduction(12000)
                 .SetBitmap(bitmapGameObject8)
                 .Build();
