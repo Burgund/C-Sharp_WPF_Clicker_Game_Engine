@@ -74,22 +74,6 @@ namespace ClickerGameEngine
             moneyPerSecondTextBox.Text = _moneyPerSec.ToString();
         }
 
-        private void BuyNewObject(GameObject gameObject)
-        {
-            if(_money >= gameObject.GetPrice())
-            {
-                _money -= gameObject.GetPrice();
-                gameObject.IncreaseLevel();
-                MoneyPerSecondUpdate();
-            }
-            else
-            {
-                MessageBox.Show("You do not have enough money!");
-            }
-
-            GameSetUp.SetUpUI(_gameObjectArray);
-        }
-
         private void ImageOneClicked(object sender, MouseEventArgs e)
         {
             BuyNewObject(_gameObjectArray[0]);
@@ -128,6 +112,23 @@ namespace ClickerGameEngine
         private void ImageEightClicked(object sender, MouseEventArgs e)
         {
             BuyNewObject(_gameObjectArray[7]);
+        }
+
+        private void BuyNewObject(GameObject gameObject)
+        {
+            if (_money >= gameObject.GetPrice())
+            {
+                _money -= gameObject.GetPrice();
+                gameObject.IncreaseLevel();
+                MoneyPerSecondUpdate();
+                _moneyPerClick += (gameObject.GetProduction() / 8);
+            }
+            else
+            {
+                MessageBox.Show("You do not have enough money!");
+            }
+
+            GameSetUp.SetUpUI(_gameObjectArray);
         }
 
         private void ClickAreaHandler(object sender, MouseEventArgs e)
