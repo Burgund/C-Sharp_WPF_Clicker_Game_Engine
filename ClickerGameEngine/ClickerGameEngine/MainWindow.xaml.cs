@@ -22,7 +22,6 @@ namespace ClickerGameEngine
     /// </summary>
     public partial class MainWindow : Window
     {
-        //Timer variable to do events each 1 second
         private DispatcherTimer _timer;
         //Player wallet
         private long _money = 0;

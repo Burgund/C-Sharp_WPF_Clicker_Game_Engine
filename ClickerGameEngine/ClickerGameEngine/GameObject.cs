@@ -6,25 +6,17 @@ using System.Threading.Tasks;
 using System.Drawing;
 using System.Windows.Media.Imaging;
 
-/// <summary>
-/// This is our main game object. Increasing numbers/levels of game object will increase player earnings
-/// </summary>
 namespace ClickerGameEngine
 {
-    class GameObject
+    internal class GameObject
     {
-        //Name of game object, f.e.: "house" if you want city-clicker or "new vlog" if you want youtuber-clicker etc.
-        private string _name;
-
-        //Level of game object (you can also understood it as amount of this kind game objects)
+        private readonly string _name;
         private int _level;
-        //Production earnings, f.e. in city-clicker "Office Tower" should be more profitable than "Kiosk"
         private int _production;
-        //increasing number/level of each game object should require an investment from player
         private int _price;
 
-        //100x100 pixels bitmap of this game object
-        private BitmapImage _bitmapUri;
+        //100x100 pixels bitmap
+        private readonly BitmapImage _bitmapUri;
 
         public GameObject(string name, int level, int production, int price, BitmapImage bitmapUri)
         {
@@ -35,7 +27,6 @@ namespace ClickerGameEngine
             _bitmapUri = bitmapUri;
         }
 
-        //This get methods allow us to get info about this Game Object to build User Interface
         public string GetName()
         {
             return _name;
@@ -64,7 +55,6 @@ namespace ClickerGameEngine
             return _bitmapUri;
         }
 
-        //Increasing level, price and production. Each next object should be more expensive and provide better production
         public void IncreaseLevel()
         {
             _level++;

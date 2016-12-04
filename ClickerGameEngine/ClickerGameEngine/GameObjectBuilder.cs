@@ -8,9 +8,8 @@ using System.Windows.Media.Imaging;
 
 namespace ClickerGameEngine
 {
-    class GameObjectBuilder
+    internal class GameObjectBuilder
     {
-        //To know more about variables check GameObject class
         private string _name;
         private int _level;
         private int _production;

@@ -9,16 +9,12 @@ namespace ClickerGameEngine
 {
     static class GameSetUp
     {
-        //Set up game objects
         public static GameObject[] BuildGameObjects()
         {
             GameObject[] gameObjectArray = new GameObject[8];
-
-            //Building game objects ->
-            //We will need Builder to build our game objects
             GameObjectBuilder gameObjectBuilder = new GameObjectBuilder();
 
-            //Game Object 1 --------------------------------------------------------------------------
+            //Game Object 1
             Uri uriGameObject1 = new Uri("pack://application:,,,/Resources/GameObjectOne.bmp");
             BitmapImage bitmapGameObject1 = new BitmapImage(uriGameObject1);
             GameObject gameObject1 = gameObjectBuilder
@@ -30,7 +26,7 @@ namespace ClickerGameEngine
                 .Build();
             gameObjectArray[0] = gameObject1;
 
-            //Game Object 2 --------------------------------------------------------------------------
+            //Game Object 2
             Uri uriGameObject2 = new Uri("pack://application:,,,/Resources/GameObjectTwo.bmp");
             BitmapImage bitmapGameObject2 = new BitmapImage(uriGameObject2);
             GameObject gameObject2 = gameObjectBuilder
@@ -42,7 +38,7 @@ namespace ClickerGameEngine
                 .Build();
             gameObjectArray[1] = gameObject2;
 
-            //Game Object 3 --------------------------------------------------------------------------
+            //Game Object 3
             Uri uriGameObject3 = new Uri("pack://application:,,,/Resources/GameObjectThree.bmp");
             BitmapImage bitmapGameObject3 = new BitmapImage(uriGameObject3);
             GameObject gameObject3 = gameObjectBuilder
@@ -54,7 +50,7 @@ namespace ClickerGameEngine
                 .Build();
             gameObjectArray[2] = gameObject3;
 
-            //Game Object 4 --------------------------------------------------------------------------
+            //Game Object 4
             Uri uriGameObject4 = new Uri("pack://application:,,,/Resources/GameObjectFour.bmp");
             BitmapImage bitmapGameObject4 = new BitmapImage(uriGameObject4);
             GameObject gameObject4 = gameObjectBuilder
@@ -66,7 +62,7 @@ namespace ClickerGameEngine
                 .Build();
             gameObjectArray[3] = gameObject4;
 
-            //Game Object 5 --------------------------------------------------------------------------
+            //Game Object 5
             Uri uriGameObject5 = new Uri("pack://application:,,,/Resources/GameObjectFive.bmp");
             BitmapImage bitmapGameObject5 = new BitmapImage(uriGameObject5);
             GameObject gameObject5 = gameObjectBuilder
@@ -78,7 +74,7 @@ namespace ClickerGameEngine
                 .Build();
             gameObjectArray[4] = gameObject5;
 
-            //Game Object 6 --------------------------------------------------------------------------
+            //Game Object 6
             Uri uriGameObject6 = new Uri("pack://application:,,,/Resources/GameObjectSix.bmp");
             BitmapImage bitmapGameObject6 = new BitmapImage(uriGameObject6);
             GameObject gameObject6 = gameObjectBuilder
@@ -90,7 +86,7 @@ namespace ClickerGameEngine
                 .Build();
             gameObjectArray[5] = gameObject6;
 
-            //Game Object 7 --------------------------------------------------------------------------
+            //Game Object 7 
             Uri uriGameObject7 = new Uri("pack://application:,,,/Resources/GameObjectSeven.bmp");
             BitmapImage bitmapGameObject7 = new BitmapImage(uriGameObject7);
             GameObject gameObject7 = gameObjectBuilder
@@ -102,7 +98,7 @@ namespace ClickerGameEngine
                 .Build();
             gameObjectArray[6] = gameObject7;
 
-            //Game Object 8 --------------------------------------------------------------------------
+            //Game Object 8
             Uri uriGameObject8 = new Uri("pack://application:,,,/Resources/GameObjectEight.bmp");
             BitmapImage bitmapGameObject8 = new BitmapImage(uriGameObject8);
             GameObject gameObject8 = gameObjectBuilder
@@ -119,7 +115,7 @@ namespace ClickerGameEngine
 
         public static void SetUpUI(GameObject[] gameObjectArray)
         {
-            //Set up game object bitmap to UI
+            //Set up bitmap to UI
             ((MainWindow)System.Windows.Application.Current.MainWindow).GameObjectImage1.Source = gameObjectArray[0].GetBitmap();
             ((MainWindow)System.Windows.Application.Current.MainWindow).GameObjectImage2.Source = gameObjectArray[1].GetBitmap();
             ((MainWindow)System.Windows.Application.Current.MainWindow).GameObjectImage3.Source = gameObjectArray[2].GetBitmap();
@@ -129,7 +125,7 @@ namespace ClickerGameEngine
             ((MainWindow)System.Windows.Application.Current.MainWindow).GameObjectImage7.Source = gameObjectArray[6].GetBitmap();
             ((MainWindow)System.Windows.Application.Current.MainWindow).GameObjectImage8.Source = gameObjectArray[7].GetBitmap();
 
-            //Set up game object production to UI
+            //Set up production to UI
             ((MainWindow)System.Windows.Application.Current.MainWindow).ProductionGameObject1.Text = gameObjectArray[0].GetProduction().ToString();
             ((MainWindow)System.Windows.Application.Current.MainWindow).ProductionGameObject2.Text = gameObjectArray[1].GetProduction().ToString();
             ((MainWindow)System.Windows.Application.Current.MainWindow).ProductionGameObject3.Text = gameObjectArray[2].GetProduction().ToString();
@@ -139,7 +135,7 @@ namespace ClickerGameEngine
             ((MainWindow)System.Windows.Application.Current.MainWindow).ProductionGameObject7.Text = gameObjectArray[6].GetProduction().ToString();
             ((MainWindow)System.Windows.Application.Current.MainWindow).ProductionGameObject8.Text = gameObjectArray[7].GetProduction().ToString();
 
-            //Set up game object price to UI
+            //Set up price to UI
             ((MainWindow)System.Windows.Application.Current.MainWindow).PriceGameObject1.Text = gameObjectArray[0].GetPrice().ToString();
             ((MainWindow)System.Windows.Application.Current.MainWindow).PriceGameObject2.Text = gameObjectArray[1].GetPrice().ToString();
             ((MainWindow)System.Windows.Application.Current.MainWindow).PriceGameObject3.Text = gameObjectArray[2].GetPrice().ToString();
@@ -149,7 +145,7 @@ namespace ClickerGameEngine
             ((MainWindow)System.Windows.Application.Current.MainWindow).PriceGameObject7.Text = gameObjectArray[6].GetPrice().ToString();
             ((MainWindow)System.Windows.Application.Current.MainWindow).PriceGameObject8.Text = gameObjectArray[7].GetPrice().ToString();
 
-            //Set up game object level
+            //Set up level to UI
             ((MainWindow)System.Windows.Application.Current.MainWindow).LevelGameObject1.Text = gameObjectArray[0].GetLevel().ToString();
             ((MainWindow)System.Windows.Application.Current.MainWindow).LevelGameObject2.Text = gameObjectArray[1].GetLevel().ToString();
             ((MainWindow)System.Windows.Application.Current.MainWindow).LevelGameObject3.Text = gameObjectArray[2].GetLevel().ToString();
@@ -159,7 +155,7 @@ namespace ClickerGameEngine
             ((MainWindow)System.Windows.Application.Current.MainWindow).LevelGameObject7.Text = gameObjectArray[6].GetLevel().ToString();
             ((MainWindow)System.Windows.Application.Current.MainWindow).LevelGameObject8.Text = gameObjectArray[7].GetLevel().ToString();
 
-            //Set up game object name
+            //Set up name to UI
             ((MainWindow)System.Windows.Application.Current.MainWindow).NameGameObject1.Text = gameObjectArray[0].GetName().ToString();
             ((MainWindow)System.Windows.Application.Current.MainWindow).NameGameObject2.Text = gameObjectArray[1].GetName().ToString();
             ((MainWindow)System.Windows.Application.Current.MainWindow).NameGameObject3.Text = gameObjectArray[2].GetName().ToString();
