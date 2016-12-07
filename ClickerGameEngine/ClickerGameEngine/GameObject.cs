@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Drawing;
-using System.Windows.Media.Imaging;
+﻿using System.Windows.Media.Imaging;
 
 namespace ClickerGameEngine
 {
@@ -39,10 +33,7 @@ namespace ClickerGameEngine
 
         public int GetProduction()
         {
-            if (_level == 0)
-                return 0;
-            else
-                return _production;
+            return _level == 0 ? 0 : _production;
         }
 
         public int GetPrice()
@@ -63,6 +54,12 @@ namespace ClickerGameEngine
             var productionIncrease = _production / 3;
             if (productionIncrease == 0) productionIncrease = 1;
             _production += productionIncrease;
+        }
+
+        public int GetProductionPerClick()
+        {
+            int amount = _production / 8;
+            return amount != 0 ? amount : 1;
         }
     }
 }

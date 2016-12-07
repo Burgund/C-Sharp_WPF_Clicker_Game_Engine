@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
 
 namespace ClickerGameEngine
@@ -189,21 +185,21 @@ namespace ClickerGameEngine
 
             //Set up name to UI
             ((MainWindow) System.Windows.Application.Current.MainWindow).NameGameObject1.Text =
-                gameObjectArray[0].GetName().ToString();
+                gameObjectArray[0].GetName();
             ((MainWindow) System.Windows.Application.Current.MainWindow).NameGameObject2.Text =
-                gameObjectArray[1].GetName().ToString();
+                gameObjectArray[1].GetName();
             ((MainWindow) System.Windows.Application.Current.MainWindow).NameGameObject3.Text =
-                gameObjectArray[2].GetName().ToString();
+                gameObjectArray[2].GetName();
             ((MainWindow) System.Windows.Application.Current.MainWindow).NameGameObject4.Text =
-                gameObjectArray[3].GetName().ToString();
+                gameObjectArray[3].GetName();
             ((MainWindow) System.Windows.Application.Current.MainWindow).NameGameObject5.Text =
-                gameObjectArray[4].GetName().ToString();
+                gameObjectArray[4].GetName();
             ((MainWindow) System.Windows.Application.Current.MainWindow).NameGameObject6.Text =
-                gameObjectArray[5].GetName().ToString();
+                gameObjectArray[5].GetName();
             ((MainWindow) System.Windows.Application.Current.MainWindow).NameGameObject7.Text =
-                gameObjectArray[6].GetName().ToString();
+                gameObjectArray[6].GetName();
             ((MainWindow) System.Windows.Application.Current.MainWindow).NameGameObject8.Text =
-                gameObjectArray[7].GetName().ToString();
+                gameObjectArray[7].GetName();
         }
     }
 }

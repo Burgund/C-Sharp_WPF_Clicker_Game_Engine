@@ -1,18 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Timers;
 using System.Windows.Threading;
 
 namespace ClickerGameEngine
@@ -22,8 +10,8 @@ namespace ClickerGameEngine
     /// </summary>
     public partial class MainWindow : Window
     {
-        private long _playerWallet = 0;
-        private int _moneyPerSecond = 0;
+        private long _playerWallet;
+        private int _moneyPerSecond;
         private int _moneyPerClick = 1;
         private readonly GameObject[] _gameObjectAggregator = GameSetUp.BuildGameObjects();
 
@@ -32,7 +20,7 @@ namespace ClickerGameEngine
             InitializeComponent();
 
             var timer = new DispatcherTimer(DispatcherPriority.SystemIdle);
-            timer.Tick += new EventHandler(OnUpdateTimerTick);
+            timer.Tick += OnUpdateTimerTick;
             timer.Interval = TimeSpan.FromMilliseconds(1000);
             timer.Start();
 
@@ -105,11 +93,12 @@ namespace ClickerGameEngine
                 _playerWallet -= gameObject.GetPrice();
                 gameObject.IncreaseLevel();
                 MoneyPerSecondUpdate();
-                _moneyPerClick += (gameObject.GetProduction() / 8);
+                _moneyPerClick += gameObject.GetProductionPerClick();
             }
             else
             {
                 MessageBox.Show("You do not have enough money!");
+     
             }
 
             GameSetUp.SetUpUI(_gameObjectAggregator);

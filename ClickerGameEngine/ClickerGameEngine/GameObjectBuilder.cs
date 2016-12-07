@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Drawing;
-using System.Windows.Media.Imaging;
+﻿using System.Windows.Media.Imaging;
 
 namespace ClickerGameEngine
 {
@@ -18,31 +12,31 @@ namespace ClickerGameEngine
 
         public GameObjectBuilder SetName(string name)
         {
-            this._name = name;
+            _name = name;
             return this;
         }
 
         public GameObjectBuilder SetLevel(int level)
         {
-            this._level = level;
+            _level = level;
             return this;
         }
 
         public GameObjectBuilder SetProduction(int production)
         {
-            this._production = production;
+            _production = production;
             return this;
         }
 
         public GameObjectBuilder SetPrice(int price)
         {
-            this._price = price;
+            _price = price;
             return this;
         }
 
         public GameObjectBuilder SetBitmap(BitmapImage bitmap)
         {
-            this._bitmap = bitmap;
+            _bitmap = bitmap;
             return this;
         }
 
