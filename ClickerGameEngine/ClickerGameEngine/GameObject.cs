@@ -60,7 +60,7 @@ namespace ClickerGameEngine
             _level++;
             _price += _price / 2;
 
-            int productionIncrease = _production / 3;
+            var productionIncrease = _production / 3;
             if (productionIncrease == 0) productionIncrease = 1;
             _production += productionIncrease;
         }

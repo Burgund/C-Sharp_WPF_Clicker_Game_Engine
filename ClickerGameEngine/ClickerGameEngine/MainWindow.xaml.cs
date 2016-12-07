@@ -31,35 +31,28 @@ namespace ClickerGameEngine
         {
             InitializeComponent();
 
-            //Using DispatcherTimer as a game loop
-            DispatcherTimer timer = new DispatcherTimer(DispatcherPriority.SystemIdle);
+            var timer = new DispatcherTimer(DispatcherPriority.SystemIdle);
             timer.Tick += new EventHandler(OnUpdateTimerTick);
             timer.Interval = TimeSpan.FromMilliseconds(1000);
             timer.Start();
 
-            //Set up the UI
             GameSetUp.SetUpUI(_gameObjectAggregator);
         }
 
-        //Timer event method
         private void OnUpdateTimerTick(object sender, EventArgs e)
         {
-            //Player will earn each second
             _playerWallet += _moneyPerSecond;
-
-            //Each second UI will be update 
             moneyTextBox.Text = _playerWallet.ToString();
             moneyPerClickTextBlock.Text = _moneyPerClick.ToString();
         }
 
-        //Each time player will increase level of any object we will have to update MPS value
         private void MoneyPerSecondUpdate()
         {
             _moneyPerSecond = 0;
 
-            for(int i = 0; i < _gameObjectAggregator.Length; i++)
+            foreach (var x in _gameObjectAggregator)
             {
-                _moneyPerSecond += _gameObjectAggregator[i].GetProduction();
+                _moneyPerSecond += x.GetProduction();
             }
 
             moneyPerSecondTextBox.Text = _moneyPerSecond.ToString();
@@ -124,10 +117,7 @@ namespace ClickerGameEngine
 
         private void ClickAreaHandler(object sender, MouseEventArgs e)
         {
-            //increase wallet
             _playerWallet += _moneyPerClick;
-
-            //UI wallet update
             moneyTextBox.Text = _playerWallet.ToString();
         }
     }
